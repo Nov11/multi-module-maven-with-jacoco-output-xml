@@ -1,13 +1,13 @@
 package pkg;
 
 public class ClassB {
-    public void foo() {
+    public void bFoo() {
         ClassC c = new ClassC();
-        c.foo();
+        c.cFoo();
     }
 
-    public void bar() {
+    public void bBar() {
         ClassC c = new ClassC();
-        c.bar();
+        c.cBar();
     }
 }

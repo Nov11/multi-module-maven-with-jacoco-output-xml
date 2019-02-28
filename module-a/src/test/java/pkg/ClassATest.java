@@ -3,16 +3,16 @@ package pkg;
 
 import org.junit.Test;
 
-class ClassATest {
+public class ClassATest {
     @Test
-    void foo() {
+    public void foo() {
         ClassA classA = new ClassA();
         classA.foo();
     }
 
     @Test
-    void bar() {
+    public void bar() {
         ClassA classA = new ClassA();
-        classA.foo();
+        classA.bar();
     }
 }

@@ -1,11 +1,11 @@
 package pkg;
 
 public class ClassC {
-    public void foo() {
+    public void cFoo() {
         System.out.println("C : foo");
     }
 
-    public void bar() {
+    public void cBar() {
         System.out.println("C : bar");
     }
 }
