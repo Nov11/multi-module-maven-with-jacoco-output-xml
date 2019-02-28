@@ -20,32 +20,34 @@
     </properties>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.3</version>
-                <executions>
-                    <!-- Unit-tests -->
-                    <execution>
-                        <id>agent-for-ut</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.3</version>
+                    <executions>
+                        <!-- Unit-tests -->
+                        <execution>
+                            <id>agent-for-ut</id>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
 
-                    <execution>
-                        <id>aggregate-report</id>
-                        <goals>
-                            <goal>report-aggregate</goal>
-                        </goals>
-                        <phase>prepare-package</phase>
-                        <!--<configuration>-->
+                        <execution>
+                            <id>aggregate-report</id>
+                            <goals>
+                                <goal>report-aggregate</goal>
+                            </goals>
+                            <phase>prepare-package</phase>
+                            <!--<configuration>-->
                             <!--<outputDirectory>${project.basedir}/../target/coverage</outputDirectory>-->
-                        <!--</configuration>-->
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+                            <!--</configuration>-->
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
